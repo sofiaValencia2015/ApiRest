@@ -1,0 +1,23 @@
+const { Sequelize } = require('sequelize');
+
+
+const bdmysql = new Sequelize(
+    'railway',
+    'root',
+    //ajustar el password de cada uno
+    'FAzzVJLPfgDciKnQuhBmwGZhAGljrfjO',
+    {
+        //ajustar el host de cada uno
+        host: 'interchange.proxy.rlwy.net',
+        //ajustar el puerto de cada uno
+        port: '38769',
+        dialect: 'mysql'
+    }
+);
+
+
+
+
+module.exports = {
+    bdmysql
+}
